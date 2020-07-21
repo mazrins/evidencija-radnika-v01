@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "evidencija-radnika-zavrsni": {
+      "hosting": {
+        "evidencija-radnika": [
+          "evidencija-radnika-zavrsni"
+        ]
+      }
+    }
+  }
+}

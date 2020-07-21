@@ -1,0 +1,36 @@
+<div class="login-class">
+  <mat-card>
+    <mat-card-title>Prijava</mat-card-title>
+    <mat-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+        <mat-form-field>
+          <mat-label>Email:</mat-label>
+          <input matInput type="text" formControlName="email" required />
+          <mat-error>Unesena adresa nije valjana.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Lozinka</mat-label>
+          <input
+            matInput
+            formControlName="password"
+            type="password"
+            required
+            minlength="6"
+          />
+          <mat-error>Lozinka nije važeća ili korisnik ne postoji.</mat-error>
+        </mat-form-field>
+        <mat-card-actions>
+          <a mat-stroked-button routerLink="/register">Registracija</a>
+          <button
+            mat-raised-button
+            type="submit"
+            color="primary"
+            [disabled]="!loginForm.valid"
+          >
+            Prijava
+          </button>
+        </mat-card-actions>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -22,9 +22,12 @@ import { MatInputModule } from '@angular/material/input';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
+import { UserComponent } from './user/user.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +36,9 @@ import { environment } from 'src/environments/environment';
     AdminDashboardComponent,
     LoginComponent,
     RegisterComponent,
+    UserComponent,
+    PageNotFoundComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

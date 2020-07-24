@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  isLogedIn: boolean = true;
+  ngOnInit(): void {}
+  constructor() {}
+
   title = 'evidencija-radnika';
-  isLogedIn: boolean = false;
 }

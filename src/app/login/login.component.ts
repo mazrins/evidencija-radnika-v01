@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -7,6 +8,9 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
+  constructor(private auth: AuthService) {}
+
+  ngOnInit(): void {}
   loginForm = new FormGroup({
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl(''),
@@ -14,10 +18,6 @@ export class LoginComponent implements OnInit {
 
   onLogin() {
     const { email, password } = this.loginForm.value;
-    // this.auth.login(email, password);
+    this.auth.login(email, password);
   }
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

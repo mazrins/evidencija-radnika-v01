@@ -28,6 +28,8 @@ import { environment } from 'src/environments/environment';
 import { UserComponent } from './user/user.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { Card1Component } from './cards/card1/card1.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     UserComponent,
     PageNotFoundComponent,
     DashboardComponent,
+    Card1Component,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

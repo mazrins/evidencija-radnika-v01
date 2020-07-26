@@ -32,6 +32,7 @@ import { Card1Component } from './cards/card1/card1.component';
 import { ProfileComponent } from './profile/profile.component';
 import { Card2Component } from './cards/card2/card2.component';
 import { SettingsComponent } from './settings/settings.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { SettingsComponent } from './settings/settings.component';
     ProfileComponent,
     Card2Component,
     SettingsComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,

@@ -30,6 +30,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Card1Component } from './cards/card1/card1.component';
 import { ProfileComponent } from './profile/profile.component';
+import { Card2Component } from './cards/card2/card2.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { ProfileComponent } from './profile/profile.component';
     DashboardComponent,
     Card1Component,
     ProfileComponent,
+    Card2Component,
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,

@@ -17,4 +17,7 @@ export class NavigationComponent {
     );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
+  logout() {
+    console.log('Odjava');
+  }
 }

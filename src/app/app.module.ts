@@ -19,6 +19,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -32,7 +33,7 @@ import { Card1Component } from './cards/card1/card1.component';
 import { ProfileComponent } from './profile/profile.component';
 import { Card2Component } from './cards/card2/card2.component';
 import { SettingsComponent } from './settings/settings.component';
-import { LogoutComponent } from './logout/logout.component';
+import { LogoutDialogComponent } from './logout-dialog/logout-dialog.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,7 @@ import { LogoutComponent } from './logout/logout.component';
     ProfileComponent,
     Card2Component,
     SettingsComponent,
-    LogoutComponent,
+    LogoutDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -66,6 +67,7 @@ import { LogoutComponent } from './logout/logout.component';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
+    MatDialogModule,
 
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,

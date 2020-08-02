@@ -1,11 +1,5 @@
 {
-  "targets": {
-    "evidencija-radnika-zavrsni": {
-      "hosting": {
-        "evidencija-radnika": [
-          "evidencija-radnika-zavrsni"
-        ]
-      }
-    }
+  "projects": {
+    "default": "evidencija-radnika-zavrsni"
   }
 }
